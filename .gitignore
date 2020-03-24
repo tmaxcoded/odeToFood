@@ -1,0 +1,2 @@
+#ignore the db.lock file
+**/.vs/OdeToFoodNew/v16/Server/sqlite3/db.lock
