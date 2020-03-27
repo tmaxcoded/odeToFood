@@ -22,8 +22,8 @@ namespace OdeToFoodNew
         {
             Resturant = new Resturant();
             Resturant = _iresturant.GetById(restaurantId);
-           
-            if(Resturant == null)
+
+            if (Resturant == null)
             {
                 return RedirectToPage("./NotFound");
             }

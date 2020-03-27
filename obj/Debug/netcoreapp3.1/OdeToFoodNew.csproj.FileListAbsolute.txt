@@ -111,6 +111,6 @@ C:\Users\zpc\source\repos\OdeToFoodNew\bin\Debug\netcoreapp3.1\OdeToFoodNew.Core
 C:\Users\zpc\source\repos\OdeToFoodNew\bin\Debug\netcoreapp3.1\OdeToFoodNew.Data.dll
 C:\Users\zpc\source\repos\OdeToFoodNew\bin\Debug\netcoreapp3.1\OdeToFoodNew.Data.pdb
 C:\Users\zpc\source\repos\OdeToFoodNew\bin\Debug\netcoreapp3.1\OdeToFoodNew.Core.pdb
-C:\Users\zpc\source\repos\OdeToFoodNew\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\Detail.cshtml.g.cs
 C:\Users\zpc\source\repos\OdeToFoodNew\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\NotFound.cshtml.g.cs
 C:\Users\zpc\source\repos\OdeToFoodNew\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\Edit.cshtml.g.cs
+C:\Users\zpc\source\repos\OdeToFoodNew\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\Detail.cshtml.g.cs
