@@ -12,12 +12,15 @@ namespace OdeToFoodNew
     public class DetailModel : PageModel
     {
         private readonly IRestaurantData _iresturant;
-
+        [TempData]
+        public string Message { get; set; }
         public DetailModel(IRestaurantData iresturant)
         {
             _iresturant = iresturant;
         }
         public Resturant Resturant { get; set; }
+
+       
         public IActionResult OnGet(int restaurantId)
         {
             Resturant = new Resturant();

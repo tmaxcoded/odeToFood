@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,8 +25,12 @@ namespace OdeToFoodNew
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContextPool<OdeToFoddDbContext>(option =>
+            {
+                option.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
+            });
             services.AddRazorPages();
-            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddScoped<IRestaurantData,SQLRestaurantData>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
